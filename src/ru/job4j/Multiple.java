@@ -1,9 +1,8 @@
 package ru.job4j;
 
-public class StudentInfo {
+public class Multiple {
     public static void main(String[] Args) {
         System.out.println("Stepan Zazyan");
-        System.out.println("1*1=1");
         System.out.println("1*2=2");
         System.out.println("1*3=3");
         System.out.println("1*4=4");
