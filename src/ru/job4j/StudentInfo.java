@@ -1,7 +1,7 @@
 package ru.job4j;
 
 public class StudentInfo {
-    public static void main(String[] Args){
+    public static void main(String[] Args) {
         System.out.println("Stepan Zazyan");
         System.out.println("1*1=1");
         System.out.println("1*2=2");
