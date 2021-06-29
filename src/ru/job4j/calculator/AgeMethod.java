@@ -7,7 +7,7 @@ public class AgeMethod {
     }
 
     public static void main(String[] args) {
-        String name = "Stepan Zazyan";
+        String name = "Stepan-Zazyan";
         int age = 30;
         AgeMethod.hello(name, age);
         AgeMethod.hello(name, age);
