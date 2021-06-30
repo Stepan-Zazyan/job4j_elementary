@@ -19,21 +19,30 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float in = 100;
-        float expected = 2;
-        float expectedDollarToRuble = 6000;
-        float expectedEuroToRuble = 7000;
-        float euro = Converter.rubleToEuro(in);
-        float dollar = Converter.rubleToDollar(in);
-        float dollarToRuble = Converter.dollarToRuble(in);
-        float euroToRuble = Converter.euroToRuble(in);
-        boolean passedEuro = expected == euro;
-        boolean passedDollar = expected == dollar;
-        boolean passedDollarToRuble = expectedDollarToRuble == dollarToRuble;
-        boolean passedEuroToRuble = expectedEuroToRuble == euroToRuble;
-        System.out.println("100 рублей = " + euro + " евро " + passedEuro);
+
+        float inRubleToEuro = 140;
+        float expectedRubleToEuro = 2;
+        float euro = Converter.rubleToEuro(inRubleToEuro);
+        boolean passedEuro = expectedRubleToEuro == euro;
+        System.out.println("140 рублей = " + euro + " евро " + passedEuro);
+
+        float inRubleToDollar = 180;
+        float expectedRubleToDollar = 3;
+        float dollar = Converter.rubleToDollar(inRubleToDollar);
+        boolean passedDollar = expectedRubleToDollar == dollar;
         System.out.println("100 рублей = " + dollar + " долларов " + passedDollar);
+
+        float inDollarToRuble = 100;
+        float expectedDollarToRuble = 6000;
+        float dollarToRuble = Converter.dollarToRuble(inDollarToRuble);
+        boolean passedDollarToRuble = expectedDollarToRuble == dollarToRuble;
         System.out.println("100 долларов = " + dollarToRuble + " рублей " + passedDollarToRuble);
+
+        float inEuroToRuble = 100;
+        float expectedEuroToRuble = 7000;
+        float euroToRuble = Converter.euroToRuble(inEuroToRuble);
+        boolean passedEuroToRuble = expectedEuroToRuble == euroToRuble;
         System.out.println("100 евро = " + euroToRuble + " рублей " + passedEuroToRuble);
+
     }
 }
