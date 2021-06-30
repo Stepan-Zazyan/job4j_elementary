@@ -1,5 +1,5 @@
 package ru.job4j.calculator;
-import ru.job4j.math.*;
+import ru.job4j.math.*; // для всего пакета
 
 import static ru.job4j.math.MathFunction.*;
 
