@@ -22,6 +22,7 @@ public class Converter {
         float in = 100;
         float expected = 2;
         float expectedDollarToRuble = 6000;
+        float expectedEuroToRuble = 7000;
         float euro = Converter.rubleToEuro(in);
         float dollar = Converter.rubleToDollar(in);
         float dollarToRuble = Converter.dollarToRuble(in);
@@ -29,7 +30,7 @@ public class Converter {
         boolean passedEuro = expected == euro;
         boolean passedDollar = expected == dollar;
         boolean passedDollarToRuble = expectedDollarToRuble == dollarToRuble;
-        boolean passedEuroToRuble = expected == euroToRuble;
+        boolean passedEuroToRuble = expectedEuroToRuble == euroToRuble;
         System.out.println("100 рублей = " + euro + " евро " + passedEuro);
         System.out.println("100 рублей = " + dollar + " долларов " + passedDollar);
         System.out.println("100 долларов = " + dollarToRuble + " рублей " + passedDollarToRuble);
