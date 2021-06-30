@@ -19,13 +19,20 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float euro = Converter.rubleToEuro(100);
-        float dollar = Converter.rubleToDollar(100);
-        float rublePocketLeft = Converter.dollarToRuble(100);
-        float rublePocketRight = Converter.euroToRuble(100);
-        System.out.println("100 рублей = " + euro + " евро");
-        System.out.println("100 рублей = " + dollar + " долларов");
-        System.out.println("100 долларов = " + rublePocketLeft + " рублей");
-        System.out.println("100 евро = " + rublePocketRight + " рублей");
+        float in = 100;
+        float expected = 2;
+        float expectedDollarToRuble = 6000;
+        float euro = Converter.rubleToEuro(in);
+        float dollar = Converter.rubleToDollar(in);
+        float dollarToRuble = Converter.dollarToRuble(in);
+        float euroToRuble = Converter.euroToRuble(in);
+        boolean passedEuro = expected == euro;
+        boolean passedDollar = expected == dollar;
+        boolean passedDollarToRuble = expectedDollarToRuble == dollarToRuble;
+        boolean passedEuroToRuble = expected == euroToRuble;
+        System.out.println("100 рублей = " + euro + " евро " + passedEuro);
+        System.out.println("100 рублей = " + dollar + " долларов " + passedDollar);
+        System.out.println("100 долларов = " + dollarToRuble + " рублей " + passedDollarToRuble);
+        System.out.println("100 евро = " + euroToRuble + " рублей " + passedEuroToRuble);
     }
 }
