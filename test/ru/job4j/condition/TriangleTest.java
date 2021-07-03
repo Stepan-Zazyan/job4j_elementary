@@ -17,7 +17,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void whenAB1BC6AC0ThenTrue(){
+    public void whenAB1BC6AC0ThenFalse(){
         double ab = 1;
         double bc = 6;
         double ac = 0;
