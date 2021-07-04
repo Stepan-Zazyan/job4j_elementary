@@ -9,7 +9,7 @@ public class SwitchWeek {
                 day = "Понедельник";
                 break;
             case 2:
-                day = "Вторник";
+                day = "Втoрник";
                 break;
             case 3:
                 day = "Среда";
