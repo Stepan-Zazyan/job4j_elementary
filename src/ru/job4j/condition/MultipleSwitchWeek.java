@@ -5,7 +5,7 @@ public class MultipleSwitchWeek {
         int i;
         switch (name) {
             case "Monday":
-            case "Понедельник":
+            case "Пoнедельник":
                 i = 1;
                 break;
             case "Tuesday":
