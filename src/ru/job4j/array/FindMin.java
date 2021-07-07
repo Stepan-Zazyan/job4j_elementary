@@ -4,9 +4,9 @@ public class FindMin {
 
     public static int findMin(int[] data) {
         int min = data[0];
-        for (int i = 0; i < data.length - 1; i++) {
-            if (data[i + 1] < data[i]) {
-                min = data[i + 1];
+        for (int i = 0; i < data.length; i++) {
+            if (min < data[i]) {
+                min = data[i];
             }
         }
 
