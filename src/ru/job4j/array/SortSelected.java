@@ -4,8 +4,9 @@ public class SortSelected {
 
     public static int[] sort(int[] data) {
         for (int i = 0; i <= data.length / 2; i++) {
-            int min = MinDiapason.findMin(data, 0, data.length - 1);
-            int index = FindLoop.indexOf(data, min, 0, data.length - 1);
+            int min = MinDiapason.findMin(data, i, data.length - 1);
+            int index = FindLoop.indexOf(data, min, i, data.length - 1);
+            int[] swap = SwitchArray.swap(data, data[i], data[index]);
             int temp = data[i];
             data[i] = data[index];
             data[index] = temp;
