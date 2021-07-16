@@ -33,4 +33,24 @@ public class MaxTest {
         int out = Max.max(first, second);
         Assert.assertEquals(expected, out);
     }
+
+    @Test
+    public void whenFirst10Second100Third1000Then1000() {
+        int first = 10;
+        int second = 100;
+        int third = 1000;
+        int expected = 1000;
+        int out = Max.max(first, second, third);
+        Assert.assertEquals(expected, out);
+    }
+
+    @Test
+    public void whenFirst10Second100Third1000ForthThen10000() {
+        int first = 10;
+        int second = 100;
+        int third = 10000;
+        int expected = 10000;
+        int out = Max.max(first, second, third);
+        Assert.assertEquals(expected, out);
+    }
 }
